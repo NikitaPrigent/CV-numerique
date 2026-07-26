@@ -1,0 +1,501 @@
+/* Ce site comme ce code restent la propriété de son créateur, Nikita Prigent, domicilié en France */
+
+@font-face {                                     /* Importation de la police */
+font-family:'Coco Gothic Regular';
+src: url(./fonts/cocogothic/Coco-Gothic-Regular-trial.woff);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(./fonts/opensans-poppins/opensans/static/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Semi Bold Poppins';
+    src: url(./fonts/opensans-poppins/poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Light Poppins';
+    src: url(./fonts/opensans-poppins/poppins/Poppins-Light.ttf);
+}
+
+
+
+div.content{               /* Mise en page générale */
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 32px;
+    z-index: 1;
+}
+
+
+div.right{             
+    margin-top: 0px;
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    width: 350px;
+}
+
+div.left{
+    background-color: black;
+    padding: 20px;
+    width: 250px;
+}
+
+div.rectanglevert{
+    background-color: #ccff00;
+    width: 15px;
+}
+
+nav.barre-de-selection-nav{
+    display: flex;
+    list-style-type: none;
+}
+
+div.barre-de-selection-div{
+    height: 32px;
+    background-color: rgba(105, 105, 105, 0.692);
+    width: 100%;
+}
+
+
+body{                                                   /* fond d'écran */
+    position: relative;
+    background-image: url('./images/fond-d-ecran.jpg');
+}
+
+ul.coordonnees,ul.langues{   /* Design des listes */
+    list-style-type: none;
+    padding-left: 0%;
+}
+
+ul.liste1,ul.liste2,ul.liste3,ul.liste4{
+padding-left: 20px;
+ font-family: 'Semi Bold Poppins';
+ font-size: 12.5px;
+}
+
+                                                             /* Design de la police d'écriture (titres) */
+
+h3.titre11,h3.titre12,h3.titre13,h3.titre14{                /* Titres à gauche */
+    font-family: 'Coco Gothic Regular';
+    font-size: 17px;
+    color: white;
+}
+
+h3.nomprenom{                                               /* Nom et Prénom */
+    font-family: 'Coco Gothic Regular';
+    font-size: 32.3px;
+    font-weight: 900;
+}
+
+h3.titre21,h3.titre23,h3.titre24,h3.titre27{                /* Titres à droite en police 17 */
+    font-family: 'Coco Gothic Regular';
+    font-size: 17px;
+}
+
+h3.titre22{                                                 /* Première Générale */
+    font-family: 'Coco Gothic Regular';
+    font-size: 14px;
+}
+
+h3.titre25,h3.titre26{                                                 /* Stage d'observation */
+    font-family: 'Coco Gothic Regular';
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+                                                             /* Design de la police d'écriture (contenu) */
+
+ul.coordonnees,ul.langues,ul.liste1,ul.liste2{      /* contenu en police 12 */
+    font-family: 'Semi Bold Poppins';
+    font-size: 12px;
+    color: white;
+}
+
+h4.intro{                                           /* Intro */
+    font-family: 'Semi Bold Poppins';
+    font-size: 14px;
+    font-weight: 100;
+}
+
+h4.disponiblites{                                   /* Disponibilités */
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 100;
+}
+
+h4.paragraphe21,h4.paragraphe22,h4.paragraphe23,h4.paragraphe24,h4.paragraphe25,h4.paragraphe26{      /* contenu en police 13 Open Sans (paragraphes) */
+    font-family: 'Open Sans';
+    font-size: 13px;
+    font-weight: 300;
+}
+
+                                                           /* espacements entre les paragraphes */
+
+div.langues,div.competences,div.centresdinteret{                            /* espacements entre les paragraphes de gauche */
+padding-top: 1px;
+}
+
+div.engagement,div.experience,div.diplomes{                            /* espacements entre les paragraphes de droite */
+padding-top: 1px;
+}
+
+                                                                 /* esthétique */
+
+img.photo{                                         /* photo ronde */             
+    position: relative;
+    border-radius: 100%;
+}
+
+div.photo,div.coordonnees,div.langues,div.competences,div.centredinteret{     /* traits blancs */
+    border-bottom: 1px solid white;
+}
+
+div.photo,h4.intro{                                     /* espacements */
+    padding-bottom: 20px;
+}
+
+h4.intro,div.formations,div.engagement,div.experience{                       /* traits noirs */
+    border-bottom: 1px solid black;
+}
+
+li.langues-barre{                                                     /* espacements + customisation dans la barre de sélection (effet de style) */
+    margin-left: 13.13%;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: white;
+}
+
+li.langues-barre:hover,li.langues-barre:active{
+    background-color: rgb(105, 105, 105);
+    box-shadow: 2px 2px 2px 2px rgb(105, 105, 105);
+}
+
+h3.protection{                                                     /* tous droits réservés */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0px;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+li.reseaux-barre{                                                     
+     margin-left: 63.03%;
+     font-family: 'Open Sans';
+     font-size: 20px;
+     color: white;
+}
+
+li.reseaux-barre:hover,li.reseaux-barre:active{
+    background-color: rgb(105, 105, 105);
+    box-shadow: 2px 2px 2px 2px rgb(105, 105, 105);
+}                                                    
+
+li.portfolio-barre{                                                     
+    margin-left: 2.63%;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: white;
+}
+
+li.portfolio-barre:hover,li.portfolio-barre:active{
+    background-color: rgb(105, 105, 105);
+    box-shadow: 2px 2px 2px 2px rgb(105, 105, 105);
+}
+
+
+div.langues-etrangeres-div{                                              /* menu des langues + customisation (effet de style) */
+    position: absolute;
+    margin-left: 7.88%;
+    background-color: rgba(105, 105, 105, 0.692);
+    width: 440px;
+    display: none;
+    z-index: 0;
+}
+
+ul.langues-etrangeres-ul{
+    list-style-type: none;
+}
+
+li.fr{                                              
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: white;
+    min-height: 47px;           /* assez haut pour contenir le drapeau */
+    padding-left: 120px;        /* pousse le texte à droite du drapeau (80px + marge) */
+    padding-top: 10px;          /* centre verticalement le texte à côté du drapeau */
+    background-image: url(./images/drapeau-de-la-france.webp);
+    background-position: 0 0;
+    background-size: 80px 53px;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+li.fr:hover,li.fr:active{                                              
+    background-color: rgb(105, 105, 105);
+}
+
+li.en{                                              
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: white;
+    min-height: 47px;           /* assez haut pour contenir le drapeau */
+    padding-left: 120px;        /* pousse le texte à droite du drapeau (80px + marge) */
+    padding-top: 10px;          /* centre verticalement le texte à côté du drapeau */
+    background-image: url(./images/iHlGBm4.jpg);
+    background-position: 0 0;
+    background-size: 80px 53px;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+li.en:hover,li.en:active{                                              
+    background-color: rgb(105, 105, 105);
+}
+
+li.es{                                              
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: white;
+    min-height: 47px;           /* assez haut pour contenir le drapeau */
+    padding-left: 120px;        /* pousse le texte à droite du drapeau (80px + marge) */
+    padding-top: 10px;          /* centre verticalement le texte à côté du drapeau */
+    background-image: url(./images/demysticway-spain-2906824_1280.png);
+    background-position: 0 0;
+    background-size: 80px 53px;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+li.es:hover,li.es:active{                                              
+    background-color: rgb(105, 105, 105);
+}
+
+li.ru{                                              
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: white;
+    min-height: 47px;           /* assez haut pour contenir le drapeau */
+    padding-left: 120px;        /* pousse le texte à droite du drapeau (80px + marge) */
+    padding-top: 10px;          /* centre verticalement le texte à côté du drapeau */
+    background-image: url(./images/waving-russia-flag_50039-939.jpg);
+    background-position: 0 0;
+    background-size: 80px 53px;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+li.ru:hover,li.ru:active{                                              
+    background-color: rgb(105, 105, 105);
+}
+
+
+div.reseaux-sociaux-div{                                              /* menu des réseaux + customisation (effet de style) */
+    position: absolute;
+    margin-left: 78.78%;
+    background-color: rgba(105, 105, 105, 0.692);
+    width: 300px;
+   display: none;
+}
+
+ul.reseaux-sociaux-ul{
+    list-style-type: none;
+}
+
+li.indeed{
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: white;
+    min-height: 47px;           /* assez haut pour contenir le drapeau */
+    padding-left: 120px;        /* pousse le texte à droite du drapeau (80px + marge) */
+    padding-top: 10px;          /* centre verticalement le texte à côté du drapeau */
+    background-image: url(./images/indeed_logo-freelogovectors.net_.png);
+    background-position: 0 0;
+    background-size: 80px 53px;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+li.indeed:hover,li.indeed:active{                                              
+    background-color: rgb(105, 105, 105);
+}
+
+li.linkedin{
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: white;
+    min-height: 40px;           /* assez haut pour contenir le drapeau */
+    padding-left: 120px;        /* pousse le texte à droite du drapeau (80px + marge) */
+    padding-top: 8px;          /* centre verticalement le texte à côté du drapeau */
+    background-image: url(./images/LinkedIn-Emblema.png);
+    background-position: 0 0;
+    background-size: 80px 45px;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+li.linkedin:hover,li.linkedin:active{                                              
+    background-color: rgb(105, 105, 105);
+}
+
+
+div.portfolio{                                              /* Portfolio + customisation (effet de style) */
+    position: absolute;
+    margin-left: 78.78%;
+    background-color: rgba(105, 105, 105, 0.692);
+    width: 300px;
+    display: none;
+}
+
+h3.portfolio-written{
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+a.fr,a.en,a.es,a.ru,a.indeed,a.linkedin{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (max-width: 1540px) {         /* Conversion sur le téléphone */  /* quand deux règles ont la même spécificité, c'est celle qui apparaît en dernier dans le fichier qui gagne — peu importe qu'elle soit dans une media query ou non. */ /* La solution : placez toujours vos media queries à la fin du fichier CSS, après toutes les règles de base. C'est une convention quasi universelle en CSS, précisément pour éviter ce piège : */
+
+div.barre-de-selection-div{             /* Rendre la barre plus flexible et ajustable en colonne */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+nav.barre-de-selection-nav{             /* Rendre la barre plus flexible et ajustable en colonne + centrer les éléments en accord avec la "position: relative" */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: fit-content;   /* la boîte prend exactement la largeur de .left + .rectanglevert + .right */
+    margin: 0 auto;        /* centre cette boîte horizontalement dans la page */
+}
+
+h3.protection{                         /* Rendre la barre plus flexible et ajustable en colonne + centrer les éléments en accord avec la "position: relative" */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: fit-content;   /* la boîte prend exactement la largeur de .left + .rectanglevert + .right */
+    margin: 0 auto;        /* centre cette boîte horizontalement dans la page */
+    margin-left: 0px;
+}
+
+li.langues-barre,                     /* Centrer les éléments */
+    li.reseaux-barre,
+    li.portfolio-barre {
+        margin-left: 0px;   /* on remplace les % fragiles par une valeur fixe simple */
+}
+
+div.content{               /* Mise en page générale */
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 108px;
+    z-index: 0;
+}
+
+div.langues-etrangeres-div{                                              /* menu des langues */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    transform: translate(-50%);
+    margin-left: 0;      /* ← ajouter */
+    z-index: 1;
+    
+}
+
+div.reseaux-sociaux-div{                                               /* menu des réseaux */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    transform: translate(-50%);
+    margin-left: 0;      /* ← ajouter */
+    z-index: 1;
+    
+}
+
+div.portfolio{                                              /* Portfolio */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    transform: translate(-50%);
+    margin-left: 0;      /* ← ajouter */
+    z-index: 1;
+    
+}
+
+li.portfolio-barre:hover,li.portfolio-barre:active{                /* espacements + customisation dans la barre de sélection (effet de style) */
+    background-color: rgb(105, 105, 105);
+    box-shadow: 2px 0px 2px 2px rgb(105, 105, 105);
+}
+
+}
+
+@media screen and (max-width: 735px){
+    
+div.content {
+position: absolute;    
+margin-left: 0px;
+flex-direction: column; /* .left et .right l'un sous l'autre, plus côte à côte */
+width: 100%;
+}
+
+div.left, div.right {
+width: 100%;           /* pleine largeur au lieu de 250px/350px fixes */
+box-sizing: border-box;
+}
+
+}
+
+
+
+@media screen and (max-width: 499px){
+    
+div.content {
+margin-top: 135px;
+}
+
+}
+
+@media screen and (max-width: 457px){
+    
+ul.langues-etrangeres-ul{                                              /* menu des langues */
+    position: relative;
+    margin-left: 50px;
+}
+
+}
+
+@media screen and (max-width: 294px){
+    
+div.content {
+margin-top: 162px;
+}
+
+ul.langues-etrangeres-ul{                                              /* menu des langues */
+    position: relative;
+    margin-left: 80px;
+}
+
+}
