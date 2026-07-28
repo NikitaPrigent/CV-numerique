@@ -413,7 +413,7 @@ div.content{               /* Mise en page générale */
 
 div.langues-etrangeres-div{                                              /* menu des langues */
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     left: 50%;
     transform: translate(-50%);
@@ -424,7 +424,7 @@ div.langues-etrangeres-div{                                              /* menu
 
 div.reseaux-sociaux-div{                                               /* menu des réseaux */
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     left: 50%;
     transform: translate(-50%);
@@ -435,7 +435,7 @@ div.reseaux-sociaux-div{                                               /* menu d
 
 div.portfolio{                                              /* Portfolio */
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     left: 50%;
     transform: translate(-50%);
